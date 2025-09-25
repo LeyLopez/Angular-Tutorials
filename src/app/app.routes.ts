@@ -15,5 +15,5 @@ export const routes: Routes = [
     {
         path: 'recover-password',
         component: Recoverpassword
-    }
+    },
 ];
