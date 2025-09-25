@@ -1,8 +1,7 @@
-<div>
-  <app-header></app-header>
-  <div class="main-container">
-    <main class="content">
-      <router-outlet></router-outlet>
-    </main>
-  </div>
+<div class="min-h-screen flex flex-col">
+  <app-header class="flex-shrink-0"></app-header>
+  <main class="flex-1">
+    <router-outlet></router-outlet>
+  </main>
+  <app-footer class="flex-shrink-0"></app-footer>
 </div>
