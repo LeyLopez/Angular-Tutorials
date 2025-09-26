@@ -1,0 +1,82 @@
+/* Estilos adicionales para el home */
+.hover\:shadow-3xl:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Animación suave para los botones */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Mejora visual para los iconos de las asignaturas */
+.subject-icon {
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+/* Efecto de hover para las cards */
+@media (hover: hover) {
+  .card-hover:hover {
+    transform: translateY(-4px) scale(1.02);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* Gradiente personalizado para los fondos de iconos */
+.bg-gradient-math {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.bg-gradient-physics {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.bg-gradient-chemistry {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.bg-gradient-programming {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+}
+
+.bg-gradient-english {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.bg-gradient-history {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+/* Estilos específicos para el layout con sidebar */
+.main-content-with-sidebar {
+  padding-left: 0;
+  transition: padding-left 0.3s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .main-content-with-sidebar {
+    padding-left: 18rem; /* 72 = 288px = 18rem */
+  }
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .subject-card {
+    flex-direction: column;
+  }
+  
+  .subject-card .w-1\/3 {
+    width: 100%;
+    min-height: 120px;
+  }
+  
+  .subject-card .w-2\/3 {
+    width: 100%;
+  }
+
+  /* Ajustar padding en móvil cuando el sidebar está oculto */
+  .main-content-with-sidebar {
+    padding-left: 0;
+  }
+}

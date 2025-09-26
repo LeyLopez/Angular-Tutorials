@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { Login } from './login/login';
 import { Signup } from './signup/signup';
 import { Recoverpassword } from './recoverpassword/recoverpassword';
+import { Home } from './home/home';
 
 export const routes: Routes = [
     {
@@ -15,5 +16,8 @@ export const routes: Routes = [
     {
         path: 'recover-password',
         component: Recoverpassword
-    },
+    },{
+        path: 'home',
+        component: Home
+    }
 ];
