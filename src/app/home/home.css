@@ -1,6 +1,6 @@
 /* Estilos adicionales para el home */
-.hover\:shadow-3xl:hover {
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+.hover\:shadow-lg:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 /* Animación suave para los botones */
@@ -15,11 +15,11 @@
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
-/* Efecto de hover para las cards */
+/* Efecto de hover más sutil para las cards */
 @media (hover: hover) {
   .card-hover:hover {
-    transform: translateY(-4px) scale(1.02);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(-2px);
+    transition: all 0.2s ease-in-out;
   }
 }
 
