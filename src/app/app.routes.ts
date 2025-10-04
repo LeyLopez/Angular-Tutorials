@@ -5,6 +5,7 @@ import { Recoverpassword } from './recoverpassword/recoverpassword';
 import { Home } from './home/home';
 import { Tutors } from './tutors/tutors';
 import { Disponibility } from './disponibility/disponibility';
+import { Profile } from './profile/profile';
 
 export const routes: Routes = [
     {
@@ -29,5 +30,9 @@ export const routes: Routes = [
     {
         path: 'disponibilities',
         component: Disponibility
+    },
+    {
+        path: 'edit-profile',
+        component: Profile
     }
 ];
