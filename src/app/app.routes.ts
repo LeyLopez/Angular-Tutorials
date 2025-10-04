@@ -4,6 +4,7 @@ import { Signup } from './signup/signup';
 import { Recoverpassword } from './recoverpassword/recoverpassword';
 import { Home } from './home/home';
 import { Tutors } from './tutors/tutors';
+import { Disponibility } from './disponibility/disponibility';
 
 export const routes: Routes = [
     {
@@ -24,5 +25,9 @@ export const routes: Routes = [
     {
         path: 'tutors',
         component: Tutors
+    },
+    {
+        path: 'disponibilities',
+        component: Disponibility
     }
 ];
