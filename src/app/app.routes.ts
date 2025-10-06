@@ -6,6 +6,7 @@ import { Home } from './home/home';
 import { Tutors } from './tutors/tutors';
 import { Disponibility } from './disponibility/disponibility';
 import { Profile } from './profile/profile';
+import { Reservations } from './reservations/reservations';
 
 export const routes: Routes = [
     {
@@ -34,5 +35,9 @@ export const routes: Routes = [
     {
         path: 'edit-profile',
         component: Profile
+    },
+    {
+        path: "reservations",
+        component: Reservations
     }
 ];
