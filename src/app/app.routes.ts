@@ -7,6 +7,7 @@ import { Tutors } from './tutors/tutors';
 import { Disponibility } from './disponibility/disponibility';
 import { Profile } from './profile/profile';
 import { Reservations } from './reservations/reservations';
+import { Details } from './details/details';
 
 export const routes: Routes = [
     {
@@ -39,5 +40,9 @@ export const routes: Routes = [
     {
         path: "reservations",
         component: Reservations
+    },
+    {
+        path: "subject-details",
+        component: Details
     }
 ];
