@@ -8,6 +8,7 @@ import { Disponibility } from './disponibility/disponibility';
 import { Profile } from './profile/profile';
 import { Reservations } from './reservations/reservations';
 import { Details } from './details/details';
+import { Records } from './records/records';
 
 export const routes: Routes = [
     {
@@ -44,5 +45,9 @@ export const routes: Routes = [
     {
         path: "subject-details",
         component: Details
+    },
+    {
+        path: "user-records",
+        component: Records
     }
 ];
