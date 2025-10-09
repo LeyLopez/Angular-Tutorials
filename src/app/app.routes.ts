@@ -9,6 +9,7 @@ import { Profile } from './profile/profile';
 import { Reservations } from './reservations/reservations';
 import { Details } from './details/details';
 import { Records } from './records/records';
+import { Mytutorials } from './mytutorials/mytutorials';
 
 export const routes: Routes = [
     {
@@ -49,5 +50,9 @@ export const routes: Routes = [
     {
         path: "user-records",
         component: Records
+    },
+    {
+        path: "my-tutorials",
+        component: Mytutorials
     }
 ];
